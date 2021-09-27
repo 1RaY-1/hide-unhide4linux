@@ -1,10 +1,10 @@
-# hide and unhide command for Linux/Termux
-Simple bash scripts (hide.sh and unhide.sh) to hide or make visible files or directories via terminal.
+# hide and unhide command for Linux and Termux
+Simple bash scripts ([hide.sh](https://github.com/1RaY-1/hide-unhide/blob/main/hide.sh) and [unhide.sh](https://github.com/1RaY-1/hide-unhide/blob/main/unhide.sh)) to hide or make visible files or directories via terminal.
 
 # How it works
-It's simple, 'hide.sh' just adds a dot at the beginning of a file/directory to hide it.
+It's simple, 'hide.sh' just adds a dot at the beginning of a file or directory to hide it.
 
-And 'unhide.sh' removes the dot at the beginning of a file/directory to make it visible.
+And 'unhide.sh' removes the dot at the beginning of a file or directory to make it visible.
 
 So instead of typing something like this (to hide): `mv MY_FILE .MY_FILE`
 
@@ -14,7 +14,7 @@ And instead of typing this (to make visible): `mv .MY_FILE MY_FILE`
 
 You just need to type this: `unhide MY_FILE`
 
-# Installation
+# Installation (via terminal)
 * `git clone https://github.com/1RaY-1/hide-unhide.git`
 * `cd hide-unhide/`
 * `bash install.sh`
