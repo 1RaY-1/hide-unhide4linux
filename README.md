@@ -15,7 +15,7 @@ And instead of typing this (to make visible): `mv .MY_FILE MY_FILE`
 You just need to type this: `unhide MY_FILE`
 
 # Installation (via terminal)
-* `git clone https://github.com/1RaY-1/hide-unhide.git`
+* `git clone https://github.com/1RaY-1/hide-unhide4linux.git`
 * `cd hide-unhide/`
 * `bash install.sh`
 
