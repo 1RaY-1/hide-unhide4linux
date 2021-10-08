@@ -16,7 +16,7 @@ You just need to type this: `unhide MY_FILE`
 
 # Installation (via terminal)
 * `git clone https://github.com/1RaY-1/hide-unhide4linux.git`
-* `cd hide-unhide/`
+* `cd hide-unhide4linux/`
 * `bash install.sh`
 
 # Usage
