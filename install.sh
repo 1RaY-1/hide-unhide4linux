@@ -17,29 +17,27 @@ if [ -d /data/data/com.termux/files/usr/bin/ ]; then
     _sudo=""
     dest_dir=/data/data/com.termux/files/usr/bin
 
-else
-
-    if [ -d $HOME/bin/ ]; then
+elif [ -d $HOME/bin/ ]; then
         dest_dir=$HOME/bin
         _sudo=""
 
-    elif [ -d /usr/bin/ ]; then
-        dest_dir=/usr/bin
-        _sudo="sudo"
+elif [ -d /usr/bin/ ]; then
+    dest_dir=/usr/bin
+    _sudo="sudo"
 
-    elif [ -d /usr/local/bin/ ]; then
-        dest_dir=/usr/local/bin
-        _sudo="sudo"
+elif [ -d /usr/local/bin/ ]; then
+    dest_dir=/usr/local/bin
+    _sudo="sudo"
 
-    elif [ -d /bin/ ]; then
-        dest_dir=/bin
-        _sudo="sudo"
+elif [ -d /bin/ ]; then
+    dest_dir=/bin
+    _sudo="sudo"
 
-    else 
-        echo "Sorry, I don't know what to do."
-        exit 1
-    fi
+else 
+    echo "Sorry, I don't know what to do."
+    exit 1
 fi
+
 
 _install (){
     new_file1=${file1%.*}
