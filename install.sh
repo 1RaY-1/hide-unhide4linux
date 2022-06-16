@@ -11,7 +11,7 @@ if ! [ -f $file1 ] || ! [ -f $file2 ]; then
     exit 1
 fi
 
-printf "Checking for needed directory...\n\n"
+printf "Checking for needed directory...\n\n";sleep 0.8
 
 if [ -d /data/data/com.termux/files/usr/bin/ ]; then
     _sudo=""
@@ -41,17 +41,17 @@ fi
 
 _install (){
     new_file1=${file1%.*}
-    echo "Renaming '${file1}' to '${new_file1}' ..."
+    echo "Renaming '${file1}' to '${new_file1}' ...";sleep 0.6
     mv $file1 $new_file1
 
     new_file2=${file2%.*}
-    echo "Renaming '${file2}' to '${new_file2}' ..."
+    echo "Renaming '${file2}' to '${new_file2}' ...";sleep 0.6
     mv $file2 $new_file2
 
-    echo "Moving: '$new_file1', '$new_file2' to '$dest_dir' ..."
+    echo "Moving: '$new_file1', '$new_file2' to '$dest_dir' ...";sleep 0.8
     $_sudo mv -t $dest_dir $new_file1 $new_file2
 
-    echo "Making '$dest_dir/$new_file1' and '$dest_dir/$new_file2' executable ..."
+    echo "Making '$dest_dir/$new_file1' and '$dest_dir/$new_file2' executable ...";sleep 0.8
     $_sudo chmod +x $dest_dir/$new_file1
     $_sudo chmod +x $dest_dir/$new_file2
 
