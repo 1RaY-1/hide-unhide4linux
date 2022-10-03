@@ -30,4 +30,4 @@ You just need to type: `hide MY_FILE`
 
 And instead of typing (to make visible): `mv .MY_FILE MY_FILE`
 
-You just need to type: `unhide MY_FILE`
+You just need to type: `unhide .MY_FILE`
