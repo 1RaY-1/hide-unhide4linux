@@ -22,8 +22,15 @@ Exit status:
 check_target(){
 #   check if needed file or directory exists
     if ! [ -f ${target} ] && ! [ -d ${target} ]; then
-        echo "$0: --> '${target}' No such file or directory"
-        return 1
+        # maybe user just entered hidden file/dir without a dot
+        if [ -e ".${target}" ]; then
+            target=".${target}" # <-- just correct
+            return 0
+        else 
+            echo "$0: --> '${target}' No such file or directory"
+            return 1
+        fi
+
     else
         return 0
     fi
