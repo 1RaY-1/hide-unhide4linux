@@ -1,5 +1,5 @@
 # About
-Maybe sometimes you wanna hide (or make visible) a file or folder, so I made an easy way to to hide or make visible files or directories via terminal (on Linux and Termux).
+Maybe sometimes you wanna hide or make visible a file or folder, so I made an easy way to do it, using terminal (on Linux and Termux).
 
 # Demo
 ![example](https://user-images.githubusercontent.com/78962948/137342389-5b5ec17e-46b3-4b9c-92ae-8bd9caa97800.gif)
