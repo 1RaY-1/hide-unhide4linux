@@ -9,6 +9,10 @@ A human readable way to hide or make visible files or directories using terminal
 * `cd hide-unhide4linux/`
 * `bash install.sh`
 
+# Uninstallation
+To uninstall (delete binaries from system), type this command inside hide-unhide4linux directory:
+```sudo bash uninstall.sh```
+
 # Usage
 ### Hide file
 `hide ANY_FILE_OR_DIRECTORY`
