@@ -66,7 +66,7 @@ _install (){
 _check (){
 
     if [ `command -v $new_file1` ] && [ `command -v $new_file2` ]; then
-        echo -e "\nDone!\nNow you can type '$new_file1' or '$new_file2' (and target file or directory) in your terminal."
+        echo -e "\nDone!\nNow you can type '$new_file1' or '$new_file2' (make visible) a file or folder in a more readable way."
         return 0
     else
         echo "Sorry, there has been an error."
