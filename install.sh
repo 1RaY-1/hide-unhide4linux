@@ -40,7 +40,7 @@ fi
 
 
 _install (){
-    new_file1=${file1%.*}
+    new_file1=${file1%.*} # <-- remove .sh
     echo "Renaming '${file1}' to '${new_file1}' ...";sleep 0.6
     mv $file1 $new_file1
 
@@ -48,6 +48,11 @@ _install (){
     echo "Renaming '${file2}' to '${new_file2}' ...";sleep 0.6
     mv $file2 $new_file2
 
+    # The commented code bellow doesn't work (dunno why), but it seems unnecessary
+    #if [[ `command -v new_file1` ]] || [[ `command -v new_file2` ]] ; then 
+    #    echo "Looks like '$new_file1' or '$new_file2' binaries already exist."
+    #    exit 0
+    #fi
     echo "Moving: '$new_file1', '$new_file2' to '$dest_dir' ...";sleep 0.8
     $_sudo mv -t $dest_dir $new_file1 $new_file2
 
@@ -69,6 +74,8 @@ _check (){
     fi
 }
 
+# This function is to remove 'hide-unhide4linux' directory.
+# And gonna disable the function as default
 _remove_rest (){
     dir=$(pwd)
     cd ..
@@ -79,8 +86,8 @@ _remove_rest (){
 # INSTALL
 _install
 _check
-if [ $? -eq 0 ]; then _remove_rest
-fi
+#if [ $? -eq 0 ]; then _remove_rest
+#fi
 
 # FINISH
 exit
