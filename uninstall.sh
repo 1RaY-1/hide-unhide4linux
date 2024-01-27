@@ -12,14 +12,14 @@ fi
 
 if which $target1 > /dev/null; then
     target1=$(which hide)
-    sudo rm $target1
+    sudo rm -v $target1
 else
     echo "$target1 doesn't exist"
 fi
 
 if which $target2 > /dev/null; then
     target2=$(which unhide)
-    sudo rm $target2
+    sudo rm -v $target2
 else
     echo "$target2 doesn't exist"
 fi
