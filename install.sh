@@ -74,8 +74,8 @@ _check (){
     fi
 }
 
-# This function is to remove 'hide-unhide4linux' directory.
-# And gonna disable the function as default
+# This function removes 'hide-unhide4linux' directory after the installation.
+# But I'm gonna disable it by default.
 _remove_rest (){
     dir=$(pwd)
     cd ..
