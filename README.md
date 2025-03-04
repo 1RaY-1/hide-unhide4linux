@@ -20,14 +20,12 @@ To uninstall (delete binaries from system), type this command inside hide-unhide
 `unhide ANY_FILE_OR_DIRECTORY`
 
 # How it works
-It's simple, 'hide.sh' just adds a dot at the beginning of a file or directory to hide it.
+It's simple: [hide.sh](https://github.com/1RaY-1/hide-unhide4linux/blob/main/hide.sh) just adds a dot to the beginning of a file or directory to hide it, and [unhide.sh](https://github.com/1RaY-1/hide-unhide4linux/blob/main/unhide.sh) removes the dot  to make it visible.
 
-And 'unhide.sh' removes the dot at the beginning of a file or directory to make it visible.
+So instead of typing like: `mv MY_FILE .MY_FILE`
 
-So instead of typing something like: `mv MY_FILE .MY_FILE`
+You type: `hide MY_FILE`
 
-You just need to type: `hide MY_FILE`
+And instead of: `mv .MY_FILE MY_FILE`
 
-And instead of typing: `mv .MY_FILE MY_FILE`
-
-You just need to type: `unhide .MY_FILE`
+You type: `unhide .MY_FILE`
