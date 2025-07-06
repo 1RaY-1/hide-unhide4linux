@@ -21,20 +21,16 @@ elif [ -d $HOME/bin/ ]; then
         dest_dir=$HOME/bin
         _sudo=""
 
-elif [ -d /usr/bin/ ]; then
-    dest_dir=/usr/bin
-    _sudo="sudo"
-
 elif [ -d /usr/local/bin/ ]; then
     dest_dir=/usr/local/bin
     _sudo="sudo"
 
-elif [ -d /bin/ ]; then
-    dest_dir=/bin
+elif [ -d /usr/bin/ ]; then
+    dest_dir=/usr/bin
     _sudo="sudo"
 
 else 
-    echo "Sorry, I don't know what to do."
+    echo "Error: not detected any user bin directory"
     exit 1
 fi
 
@@ -88,6 +84,3 @@ _install
 _check
 #if [ $? -eq 0 ]; then _remove_rest
 #fi
-
-# FINISH
-exit
